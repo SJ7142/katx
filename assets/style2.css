@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:lang(ko) {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  :lang(en) {
+    font-family: 'Roboto', sans-serif;
+  }
+html,
+body {
+    width:100%;
+    height:100%
+    ;margin:0px;
+    padding:0px;
+    overflow:hidden;
+    font-family:sans-serif;
+}
+	
+	#fullpage {
+        position:relative;
+        top:0px;
+        z-index:9;
+        width:100%;
+        height:100%;
+    }
+	.fullsection{
+        width:100%;
+        height:100%;
+        position:relative;
+    }
+	.full1 {
+        width: 100%;
+        height: 100vh;
+        background: url(./img/banner5.png) no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    .bx_tit {
+        position: absolute;
+        bottom: 170px;
+        left: 200px;
+    }
+    .bx_tit p {
+        font-size: 24px;
+        color: #fff;
+        padding-bottom: 37px;
+    }
+    .bx_tit span {
+        font-size: 36px;
+        color: #fff;
+    }
+	.full2 {
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        position: relative;
+    }
+    .inner {
+        width: 1180px;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .bx_cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .bx_txt {}
+    .bx_txt p {
+        font-size: 48px;
+        color: #000;
+        padding-bottom: 28px;
+    }
+    .bx_txt span {
+        color: #FF557A;
+    }
+    .bx_txt em {
+        font-size: 24px;
+        color: #000;
+        font-style: normal;
+    }
+	.full3 {
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        position: relative;
+    }
+	.full4 {
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        position: relative;
+    }
+    .full5 {
+        width: 100%;
+        height: 100vh;
+        background: #E9E9E9;
+        position: relative;
+    }
+    .full5 .bx_cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+	.full5 .l_bx img {
+        width: 70%;
+    }
+	ul, li {
+        margin:0;
+        padding:0;
+        list-style:none;
+    }
+	/* .quick {
+        position:fixed;
+        right:20px;
+        top:50%;
+        transform:translateY(-50%);
+        z-index:100000;
+    }
+	.quick li {
+        width:10px;
+        height:10px;
+        margin-bottom:10px;
+        border-radius:15px;
+        border:2px solid #fff;
+        cursor:pointer;
+        }
+	.quick .on {
+        background:#fff;
+    } */

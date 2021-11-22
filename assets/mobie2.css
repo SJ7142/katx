@@ -1,0 +1,18 @@
+@media screen and (max-width: 1024px) {
+  .bx_tit {
+    left: 70px;
+  }
+  .bx_cont {
+    flex-direction: column;
+  }
+  .l_bx {
+    padding-bottom: 30px;
+  }
+  .inner {
+    top: 20%;
+  }
+  .full5 .r_bx img {
+    width: 40%;
+    margin-left: 180px;
+  }
+}
