@@ -63,4 +63,13 @@
   .full4 .bx_cont li:nth-child(4) {
     padding: 20px 52px 0 0;
   }
+  .tx p {
+    font-size: 18px;
+  }
+  .bx_tit h2 {
+    font-size: 24px;
+  }
+  .bx_tit p {
+    font-size: 16px;
+  }
 }
