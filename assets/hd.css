@@ -22,12 +22,24 @@ header {
 .header_nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
   padding: 35px 0 35px 0;
 }
 .logo {
   width: 97px;
   height: 29px;
+}
+.active .logo {
+  width: 130px;
+  height: 29px;
+  background-image: url(./img/logo_b.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 30px 0;
+  z-index: 10;
+}
+.menu {
+  padding-left: 220px;
 }
 .menu ul {
   display: flex;
@@ -43,19 +55,73 @@ header {
 .menu a:hover {
   border-bottom: 1px solid #fff;
 }
-.lang {
+.n_ham {
+  display: none;
+  transition: 0.5s;
+  position: absolute;
+  top: 22px;
+  right: 3%;
+  z-index: 1;
   cursor: pointer;
-  border: 1px solid #fff;
-  padding: 2px 8px;
-  color: #fff;
 }
-.lang_k {
-  display: flex;
-  align-items: center;
+
+.n_ham > span {
+  display: block;
+  border: 1px solid white;
+  width: 30px;
+  margin: 10px 0;
 }
-.kr {
-  text-transform: uppercase;
+.active .n_ham {
+  padding-top: 20px;
 }
-.bow {
-  margin: 0 0 7px 10px;
+.active .f_line {
+  margin: 0;
+  transform: rotate(45deg);
+  transition: transform 0.3192s 0.1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+}
+.active .s_line {
+  margin: 0;
+  transform: rotate(-45deg);
+  transition: transform 0.3192s 0.1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+}
+.active .l_line {
+  display: none;
+}
+.active .header_nav ul {
+  display: block;
+}
+header.active {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+/* header.active .logo {
+  background: url(./img/logo_b.png) no-repeat;
+  background-size: contain;
+  width: 144px;
+  height: 33px;
+} */
+header.active .header_nav li a {
+  color: #000;
+}
+header.active .n_ham > span {
+  border: 1px solid #000;
+}
+@media screen and (max-width: 1024px) {
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+  }
+  .menu li {
+    margin: 10px 0 10px 0;
+  }
+  .n_ham {
+    display: block;
+  }
+  .logo {
+    padding-left: 30px;
+  }
 }
